@@ -13,6 +13,7 @@ body{
 :root {
     --azul: #1c222e;
     --naranja: #f26d22;
+    --blanco:rgb(255, 255, 255);
 }
 
 
@@ -45,7 +46,7 @@ body{
     font-family: 'Maven Pro', 'Sans-serif';
     text-transform: uppercase;
     font-weight: 700;
-    text-shadow: 2px 2px 10px var(--naranja);
+    /* text-shadow: 2px 2px 10px var(--naranja); */
     &:hover{
         color: var(--naranja);
     }
@@ -53,5 +54,61 @@ body{
 
 
 /* -------------       MAIN      -----------  */
-.primer-div{
+.main{
+    /* La altura es solo para probar el fondo, despues la saco */
+    min-height: 80rem; 
+    display: flex;
+    flex-direction: column;
 }
+
+
+.primer-div{
+    background-image: linear-gradient(to bottom right,rgb(131, 158, 248), var(--blanco), var(--blanco), var(--blanco));
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        font-family: 'Maven Pro';
+        text-shadow: 1px 1px 5px var(--azul);
+        font-size: 5rem;
+        color: var(--azul);
+        text-align: center;
+        font-weight: 500;
+        margin: 0;
+        span{
+            font-weight: 900;
+        }
+        
+    }
+    button{
+        margin-top: 2rem;
+        padding: 0.5rem 3rem;
+        font-size: 1.5rem;
+        font-family: 'Maven Pro';
+        font-weight: 500;
+        background-color: var(--naranja);
+        border: none;
+    }
+}
+
+.segundo-div{
+    padding: 5rem 10rem;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom right, var(--blanco), var(--blanco), var(--blanco), rgb(255, 181, 83) );
+
+    .row{
+        margin: 2rem 0;
+    }
+
+    .card{
+        border-style: none;
+    }
+
+    .card-body, .card-footer{
+        background-color: #e8efff;
+    }
+
+}
+
+
