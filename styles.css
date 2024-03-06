@@ -1,0 +1,57 @@
+/* -------------       GLOBALES      -----------  */
+
+body{
+    box-sizing: border-box;
+    width: 100%;
+    font-style: "Maven Pro", sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --azul: #1c222e;
+    --naranja: #f26d22;
+}
+
+
+
+
+
+/* -------------       HEADER      -----------  */
+.navbar{
+    background-color: var(--azul);
+    padding: 0.3rem 10rem;
+}
+
+.contenido-navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.logo{
+    width: 15rem;
+}
+
+
+.nav-item{
+    margin: 0 2rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Maven Pro', 'Sans-serif';
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px var(--naranja);
+    &:hover{
+        color: var(--naranja);
+    }
+}
+
+
+/* -------------       MAIN      -----------  */
+.primer-div{
+}
