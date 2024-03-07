@@ -4,8 +4,8 @@ body{
     box-sizing: border-box;
     width: 100%;
     font-style: "Maven Pro", sans-serif;
-    /* background-image: linear-gradient(rgb(247, 157, 22), var(--blanco), var(--blanco), rgb(137, 215, 247)); */
-    background-color: #f0f7f7;
+    background-image: linear-gradient(rgb(255, 255, 255), var(--blanco), var(--blanco));
+    /* background-color: #e8f5f5; */
 }
 
 *, *:before, *:after {
@@ -51,7 +51,7 @@ body{
     font-family: 'Maven Pro', 'Sans-serif';
     /* text-transform: uppercase; */
     font-weight: 500;
-    /* text-shadow: 2px 2px 10px var(--naranja); */
+    /* text-shadow: 1px 1px 1px var(--azul); */
     &:hover{
         color: var(--azul);
     }
