@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
     width: 100%;
     font-style: "Maven Pro", sans-serif;
-    background-image: linear-gradient(to bottom right,rgb(154, 177, 252), var(--blanco), var(--blanco), var(--blanco));
+    background-image: linear-gradient(to bottom right,rgb(154, 177, 252), var(--blanco), var(--blanco), rgb(253, 185, 83));
 }
 
 *, *:before, *:after {
