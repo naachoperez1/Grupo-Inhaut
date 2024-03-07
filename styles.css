@@ -4,6 +4,7 @@ body{
     box-sizing: border-box;
     width: 100%;
     font-style: "Maven Pro", sans-serif;
+    background-image: linear-gradient(to bottom right,rgb(154, 177, 252), var(--blanco), var(--blanco), var(--blanco));
 }
 
 *, *:before, *:after {
@@ -22,8 +23,8 @@ body{
 
 /* -------------       HEADER      -----------  */
 .navbar{
-    background-color: var(--azul);
-    padding: 0.3rem 10rem;
+    /* background-color: var(--azul); */
+    padding: 2rem 10rem;
 }
 
 .contenido-navbar{
@@ -35,21 +36,31 @@ body{
 
 .logo{
     width: 15rem;
+    font-family: "Maven Pro";
+    font-weight: 800;
 }
 
 
 .nav-item{
     margin: 0 2rem;
-    color: white;
+    color: var(--azul);
     text-decoration: none;
     font-size: 1.2rem;
     font-family: 'Maven Pro', 'Sans-serif';
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 700;
     /* text-shadow: 2px 2px 10px var(--naranja); */
     &:hover{
         color: var(--naranja);
     }
+}
+
+.sumate{
+    background-color: #f26d22;
+    padding: 0.7rem;
+    color: white;
+    border-radius: 10%;
+    font-weight: 300;
 }
 
 
@@ -63,7 +74,7 @@ body{
 
 
 .primer-div{
-    background-image: linear-gradient(to bottom right,rgb(131, 158, 248), var(--blanco), var(--blanco), var(--blanco));
+    /* background-image: linear-gradient(to bottom right,rgb(131, 158, 248), var(--blanco), var(--blanco), var(--blanco)); */
     padding-top: 3rem;
     display: flex;
     flex-direction: column;
@@ -95,7 +106,7 @@ body{
 .segundo-div{
     padding: 5rem 10rem;
     margin: 0 auto;
-    background-image: linear-gradient(to bottom right, var(--blanco), var(--blanco), var(--blanco), rgb(255, 181, 83) );
+    /* background-image: linear-gradient(to bottom right, var(--blanco), var(--blanco), var(--blanco), rgb(255, 181, 83) ); */
 
     .row{
         margin: 2rem 0;
@@ -103,6 +114,10 @@ body{
 
     .card{
         border-style: none;
+        font-family: "Maven Pro";
+    }
+    .card-title{
+        font-weight: 600;
     }
 
     .card-body, .card-footer{
