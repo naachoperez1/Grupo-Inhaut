@@ -133,7 +133,7 @@ body{
     }
 
     .card-body, .card-footer{
-        background-color: #d2e0e0d0;
+        background-color: #d6f6f6;
     }
 
 }
@@ -148,7 +148,7 @@ body{
         font-family: "Maven Pro";
         font-weight: 600;
         color: white;
-        font-size: 5rem;
+        font-size: 3rem;
     }
     .iconos-nosotros{
         margin-top: 7rem;
