@@ -201,7 +201,7 @@ body{
  
 
     .texto-cuarto-div{
-        margin: 25rem auto ;
+        margin: 20rem auto ;
         font-family: "Maven Pro";
         text-align: center;
         font-size: 3rem;
@@ -212,7 +212,7 @@ body{
     .carousel{
         margin: auto;
         margin-bottom: 5rem;
-        width: 90%;
+        width: 100%;
 
     }
 
@@ -222,7 +222,7 @@ body{
     }
 
     .d-item{
-        height: 50rem;
+        height: 40rem;
     }
 
     .d-img{
