@@ -195,6 +195,40 @@ body{
 
 }
 
+.cuarto-div{
+    display: flex;
+    flex-direction: column;
+ 
+
+    .texto-cuarto-div{
+        margin: 25rem auto ;
+        font-family: "Maven Pro";
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 600;
+        color:#9a3821;
+    }
+
+    .carousel{
+        margin: auto;
+        margin-bottom: 5rem;
+        width: 90%;
+
+    }
+
+    h5{
+        font-size: 2rem;
+        font-family: "Maven Pro";
+    }
+
+    .d-item{
+        height: 50rem;
+    }
+
+    .d-img{
+        filter: brightness(0.4)
+    }
+}
 
 
 
