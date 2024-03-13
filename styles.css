@@ -4,7 +4,6 @@ body{
     box-sizing: border-box;
     width: 100%;
     font-style: "Maven Pro", sans-serif;
-    background-image: linear-gradient(rgb(255, 255, 255), var(--blanco), var(--blanco) );
     /* background-color: #e8f5f5; */
 }
 
@@ -116,10 +115,52 @@ body{
     }
 }
 
+/* Animacion slider */
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+.slider-infinito-contenedor{
+    overflow: hidden;
+    padding: 3rem 0 0 0;
+} */
+
+.slider-infinito-contenedor::before, .slider-infinito-contenedor::after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+} 
+
+
+
+.slider-infinito{
+    white-space: nowrap;
+    animation: 8s slide infinite linear;
+}
+
+.slider-infinito img{
+    border-radius: 2%;
+    margin: 0 .5rem;
+    width: 25rem;
+    height: 20rem;
+}
+
+
+
+
+
 .segundo-div{
     padding: 2rem 10rem;
-    margin: 0 auto;
-
+    margin: 1rem auto;
+    
     .row{
         margin: 2rem 0;
     }
@@ -142,13 +183,13 @@ body{
     background-image: url(imagenes/bg-canva-2.jpg);
     padding: 5rem 10rem;
     text-align: center;
-    transition: opacity 3s ease;
+    transition: opacity 1s ease;
     p{
         margin-top: 5rem;
         font-family: "Maven Pro";
         font-weight: 600;
         color: white;
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .iconos-nosotros{
         margin-top: 7rem;
@@ -198,21 +239,32 @@ body{
 .cuarto-div{
     display: flex;
     flex-direction: column;
- 
+    
+    .contenedor-texto{
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 30rem;
+        }
+    }
 
     .texto-cuarto-div{
-        margin: 20rem auto ;
         font-family: "Maven Pro";
+        text-shadow: 1px 1px 3px ;
+        margin-bottom: 1rem;
         text-align: center;
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: 600;
-        color:#9a3821;
+        color:#ff9900;
     }
 
     .carousel{
         margin: auto;
         margin-bottom: 5rem;
-        width: 100%;
+
 
     }
 
@@ -226,7 +278,7 @@ body{
     }
 
     .d-img{
-        filter: brightness(0.4)
+        filter: brightness(0.4);
     }
 }
 
