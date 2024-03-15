@@ -162,7 +162,6 @@ body{
 
     .texto-segundo-div{ 
         background-color:var(--naranja);
-        /* text-shadow: 1px 1px 1px; */
         text-align: center;
         font-size: 1.5rem;
         color: #ffffff;
@@ -193,7 +192,7 @@ body{
 }
 
 .tercer-div{
-    background-image: url(imagenes/bg-canva-2.jpg);
+    background-image: url(imagenes/bg-canva-3.jpg);
     padding: 5rem 10rem;
     text-align: center;
     transition: opacity 1s ease;
@@ -202,18 +201,21 @@ body{
         font-family: "Maven Pro";
         font-weight: 600;
         color: white;
+        text-shadow: 1px 1px 3px;
         font-size: 4rem;
     }
     .iconos-nosotros{
         margin-top: 7rem;
         display: flex;
         gap: 2rem;
+
         p{
             font-family: "Maven Pro";
             color: white;
             font-weight: 300;
             font-size: 1rem;
             margin-top: 1rem;
+            text-shadow: none;
         }
     }
     
@@ -335,8 +337,8 @@ body{
 .footer{
     color: var(--naranja);
     font-family: "Maven Pro";
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 600;
     text-align: center;
     padding: .5rem;
 
