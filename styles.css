@@ -163,6 +163,7 @@ body{
 
 
     .texto-segundo-div{ 
+        box-shadow:1px 1px 3px #9c9090;
         background-color:var(--naranja);
         text-align: center;
         font-size: 1.5rem;
@@ -198,6 +199,7 @@ body{
     padding: 5rem 10rem;
     text-align: center;
     transition: opacity 1s ease;
+    box-shadow:1px 1px 3px #807878;
     p{
         margin-top: 5rem;
         font-family: "Maven Pro";
@@ -257,6 +259,7 @@ body{
     display: flex;
     flex-direction: column;
     
+    
     .contenedor-texto{
         margin-top: 10rem;
         margin-bottom: 5rem;
@@ -281,7 +284,7 @@ body{
     .carousel{
         margin: auto;
         margin-bottom: 5rem;
-
+        box-shadow:1px 1px 3px #000000;
 
     }
 
