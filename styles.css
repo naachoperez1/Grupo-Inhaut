@@ -127,7 +127,7 @@ body{
   width: 20rem;
   height: 23rem;
   border-radius: 3%;
-  filter: brightness(0.7);
+  filter: brightness(0.8);
 }
 
 .scroller__inner {
@@ -291,7 +291,7 @@ body{
         flex-direction: column;
         align-items: center;
         img{
-            width: 30rem;
+            /* width: 100%; */
         }
     }
 
@@ -306,7 +306,6 @@ body{
     }
 
     .carousel{
-        margin: auto;
         margin-bottom: 5rem;
         box-shadow:1px 1px 3px #000000;
 
@@ -319,10 +318,11 @@ body{
 
     .d-item{
         height: 40rem;
+        width: 100%;
     }
 
     .d-img{
-        filter: brightness(0.4);
+        filter: brightness(0.5);
     }
 }
 

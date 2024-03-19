@@ -2,9 +2,9 @@
 
 - La seccion conoce nuestras propiedades tiene que ser mas moderna.
 
-- Cambiar los simbolos de "Seguridad" "Precio" y "A Tiempo" por unos en 3D.
-
 - Las fotos del slider manual tienen que ser las que me paso marcos.
+
+- El slider infinito ocupa mucho mas que el ancho de la pantalla.
 
 - Agregar mas circulos a la foto hecha con canva.
 
