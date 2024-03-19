@@ -127,7 +127,7 @@ body{
   width: 20rem;
   height: 23rem;
   border-radius: 3%;
-  filter: brightness(0.8);
+  filter: brightness(0.9);
 }
 
 .scroller__inner {
@@ -219,7 +219,7 @@ body{
 }
 
 .tercer-div{
-    background-image: url(imagenes/bg-canva-3.jpg);
+    background-image: url(imagenes/bg-canva.jpg);
     padding: 5rem 10rem;
     text-align: center;
     transition: opacity 1s ease;
@@ -283,7 +283,6 @@ body{
     display: flex;
     flex-direction: column;
     
-    
     .contenedor-texto{
         margin-top: 10rem;
         margin-bottom: 5rem;
@@ -308,7 +307,6 @@ body{
     .carousel{
         margin-bottom: 5rem;
         box-shadow:1px 1px 3px #000000;
-
     }
 
     h5{
@@ -318,11 +316,10 @@ body{
 
     .d-item{
         height: 40rem;
-        width: 100%;
     }
 
     .d-img{
-        filter: brightness(0.5);
+        filter: brightness(0.8);
     }
 }
 
