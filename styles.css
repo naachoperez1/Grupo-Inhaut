@@ -219,7 +219,7 @@ body{
 }
 
 .tercer-div{
-    background-image: url(imagenes/bg-canva.jpg);
+    background-image: url(imagenes/bg-canva-2.jpg);
     padding: 5rem 10rem;
     text-align: center;
     transition: opacity 1s ease;
@@ -229,7 +229,7 @@ body{
         font-family: "Maven Pro";
         font-weight: 600;
         color: white;
-        text-shadow: 1px 1px 3px;
+        /* text-shadow: 1px 1px 3px; */
         font-size: 4rem;
     }
     .iconos-nosotros{
