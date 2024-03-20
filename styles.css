@@ -361,16 +361,81 @@ body{
     }
 }
 
+.sexto-div{
+    padding: 5rem;
+    background: linear-gradient(#ff8800, #ffa53e, white);
+    .texto-sexto-div{
+        margin: 5rem 0 3rem 0;
+        color: white;
+        font-family: "Maven Pro";
+        font-size: 4rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    .grid-tarjetas{
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .tarjeta{
+        text-align: left;
+        margin-top: 1.5rem;
+        background-color: rgb(255, 255, 255);
+        padding: 5rem;
+        border-radius: 3%;
+        width: 30rem;
+        height: 20rem;
+        box-shadow: 2px 2px 5px #9a3821;
+        h3{
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        p{
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+
+    .tar-1{
+        background-color: #ffffff;
+        color: #ff9100;
+    }
+
+    .tar-2{
+        background-color: #ff9100;
+        color: white;
+    }
+
+    .tar-3{
+        background-color: #9a3821;
+        color:white;
+    }
+
+    .tar-4{
+        background-color: #ffffff;
+        color: #9a3821;
+    }
+
+
+    .icono3d{
+        width: 3rem;
+    }
+
+    
+}
+
 
 
 
 /* -------------       FOOTER      -----------  */
 .footer{
-    background-color: #f26d22;
-    color: white;
+    background-color: white;
+    color: #f26d22;
     font-family: "Maven Pro";
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: 600;
     text-align: center;
     padding: .5rem;
 
