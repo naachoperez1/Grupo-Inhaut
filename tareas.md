@@ -1,10 +1,10 @@
 ###### POR HACER ######
 
+- Agregar sombra al logo de grupo inhaut (canva o photoshop).
+
 - La seccion conoce nuestras propiedades tiene que ser mas moderna.
 
 - El slider infinito ocupa mucho mas que el ancho de la pantalla.
-
-- Agregar mas circulos a la foto hecha con canva.
 
 - Hacer la pagina responsiva.
 

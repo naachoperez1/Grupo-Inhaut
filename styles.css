@@ -36,7 +36,6 @@ body{
 
 .logo{
     width: 12rem;
-
 }
 
 
@@ -290,7 +289,7 @@ body{
         flex-direction: column;
         align-items: center;
         img{
-            /* width: 100%; */
+            width: 30%;
         }
     }
 
@@ -343,6 +342,11 @@ body{
         width: 20rem;
     }
 
+    .small{
+        font-size: 1.5rem;
+        text-shadow: none;
+    }
+
     button{
         font-weight: 500;
         font-size: 1.5rem;
@@ -362,10 +366,11 @@ body{
 
 /* -------------       FOOTER      -----------  */
 .footer{
-    color: var(--naranja);
+    background-color: #f26d22;
+    color: white;
     font-family: "Maven Pro";
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 500;
     text-align: center;
     padding: .5rem;
 
