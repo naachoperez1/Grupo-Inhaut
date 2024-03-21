@@ -1,22 +1,22 @@
-const boxes = document.querySelectorAll('.tercer-div');
+// const boxes = document.querySelectorAll('.tercer-div');
 
-window.addEventListener('scroll', fadeInElements);
+// window.addEventListener('scroll', fadeInElements);
 
-function fadeInElements() {
-  boxes.forEach(box => {
-    const boxTop = box.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
+// function fadeInElements() {
+//   boxes.forEach(box => {
+//     const boxTop = box.getBoundingClientRect().top;
+//     const windowHeight = window.innerHeight;
 
-    if (boxTop < windowHeight) {
-      box.style.opacity = '1';
-    } else {
-      box.style.opacity = '0';
-    }
-  });
-}
+//     if (boxTop < windowHeight) {
+//       box.style.opacity = '1';
+//     } else {
+//       box.style.opacity = '0';
+//     }
+//   });
+// }
 
 // Llama a la función una vez para asegurarse de que los elementos visibles se muestren al principio
-fadeInElements();
+// fadeInElements();
 
 
 const scrollers = document.querySelectorAll(".scroller");
@@ -45,3 +45,61 @@ function addAnimation() {
     });
   });
 }
+
+
+
+// Slider de casas
+
+let items = document.querySelectorAll('.slider .list .item');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
+let thumbnails = document.querySelectorAll('.thumbnail .item');
+
+// config param
+let countItem = items.length;
+let itemActive = 0;
+// event next click
+next.onclick = function(){
+    itemActive = itemActive + 1;
+    if(itemActive >= countItem){
+        itemActive = 0;
+    }
+    showSlider();
+}
+//event prev click
+prev.onclick = function(){
+    itemActive = itemActive - 1;
+    if(itemActive < 0){
+        itemActive = countItem - 1;
+    }
+    showSlider();
+}
+// auto run slider
+let refreshInterval = setInterval(() => {
+    next.click();
+}, 5000)
+function showSlider(){
+    // remove item active old
+    let itemActiveOld = document.querySelector('.slider .list .item.active');
+    let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
+    itemActiveOld.classList.remove('active');
+    thumbnailActiveOld.classList.remove('active');
+
+    // active new item
+    items[itemActive].classList.add('active');
+    thumbnails[itemActive].classList.add('active');
+
+    // clear auto time run slider
+    clearInterval(refreshInterval);
+    refreshInterval = setInterval(() => {
+        next.click();
+    }, 5000)
+}
+
+// click thumbnail
+thumbnails.forEach((thumbnail, index) => {
+    thumbnail.addEventListener('click', () => {
+        itemActive = index;
+        showSlider();
+    })
+})
