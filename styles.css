@@ -185,6 +185,10 @@ body{
 .segundo-div{
     /* padding: 5rem 10rem 0 10rem; */
 
+    .content{
+        color: white;
+        text-shadow: 1px 1px 3px white;
+    }
 
     .texto-segundo-div{ 
         margin-top: 2rem;
@@ -198,7 +202,7 @@ body{
 
 }
 
-.tercer-div{
+/* .tercer-div{
     margin-top: -40px;
     background-image: url(imagenes/bg-canva-2.jpg);
     padding: 5rem 10rem;
@@ -210,7 +214,6 @@ body{
         font-family: "Maven Pro";
         font-weight: 600;
         color: white;
-        /* text-shadow: 1px 1px 3px; */
         font-size: 4rem;
     }
     .iconos-nosotros{
@@ -258,7 +261,7 @@ body{
         }
     }
 
-}
+} */
 
 .cuarto-div{
     display: flex;
@@ -462,7 +465,7 @@ body{
     left: 0;
     bottom: 0;
     background-image: linear-gradient(
-        to top, #000000 5%, transparent
+        to top, #000000 3%, transparent
     );
 }
 .slider .list .item .content{
