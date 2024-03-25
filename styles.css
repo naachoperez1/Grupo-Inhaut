@@ -36,6 +36,8 @@ body{
 
 .logo{
     width: 12rem;
+    -webkit-filter: drop-shadow(1px 1px 1px #9a3821);
+    filter: drop-shadow(1px 1px 1px #9a3821);
 }
 
 
