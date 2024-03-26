@@ -122,42 +122,37 @@ body{
 .scroller {
     margin: 0 auto;
     margin-top: 3rem;
+    
 }
 
 .scroller__inner img{
   width: 20rem;
   height: 23rem;
   border-radius: 3%;
-  filter: brightness(0.9);
+  /* filter: brightness(0.7); */
 }
 
 .scroller__inner {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  
 }
 
 .scroller[data-animated="true"] {
   overflow: hidden;
-  /* -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 5%,
-    white 95%,
-    transparent
-  );
-  mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent); */
 }
 
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
+  overflow: hidden;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-direction="right"] {
   --_animation-direction: reverse;
+  
 }
 
 .scroller[data-direction="left"] {
@@ -175,6 +170,7 @@ body{
 @keyframes scroll {
   to {
     transform: translate(calc(-50% - 0.5rem));
+    
   }
 }
 
@@ -187,7 +183,7 @@ body{
 
     .content{
         color: white;
-        text-shadow: 1px 1px 3px white;
+        text-shadow: 1px 1px 3px rgb(255, 255, 255);
     }
 
     .texto-segundo-div{ 
@@ -290,7 +286,7 @@ body{
 
     .carousel{
         margin-bottom: 5rem;
-        box-shadow:1px 1px 3px #000000;
+        box-shadow: 3px 3px 5px #f26d22;
     }
 
     h5{
@@ -304,6 +300,7 @@ body{
 
     .d-img{
         filter: brightness(0.8);
+
     }
 }
 
@@ -368,7 +365,7 @@ body{
         text-align: left;
         margin-top: 1.5rem;
         background-color: rgb(255, 255, 255);
-        padding: 5rem;
+        padding: 5rem 2rem;
         border-radius: 3%;
         width: 30rem;
         height: 20rem;
@@ -433,16 +430,17 @@ body{
 .slider{
     height: 100vh;
     position: relative;
-    margin-top: 1rem;
-    margin-bottom: 2.4rem;
+    margin-top: 2rem;
+    box-shadow: 3px 3px 5px #f26d22;
 }
 
 .content{
     color: white;
 
     h3  {
-        font-size: 6rem;
+        font-size: 5rem;
         font-weight: 500;
+        margin: 2rem 0;
     }
 }
 .slider .list .item{
@@ -456,6 +454,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(0.7);
 }
 .slider .list .item::after{
     content: '';
@@ -464,9 +463,7 @@ body{
     position: absolute;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(
-        to top, #000000 3%, transparent
-    );
+    background-image: radial-gradient(transparent,  rgba(255, 58, 4, 0.116))
 }
 .slider .list .item .content{
     position: absolute;
@@ -514,7 +511,7 @@ body{
     z-index: 100;
 }
 .arrows button{
-    background-color: #eee5;
+    background-color: #9a3821;
     border: none;
     font-family: monospace;
     width: 40px;
@@ -558,7 +555,7 @@ body{
     border-radius: 10px;
 }
 .thumbnail .item.active{
-    filter: brightness(1.5);
+    filter: brightness(1);
 }
 .thumbnail .item .content{
     position: absolute;
@@ -576,4 +573,51 @@ body{
     }
 }
 
+
+/* -------------       SOBRE NOSOTROS      -----------  */
+.titulo-nosotros{
+    text-align: center;
+    font-size: 5rem;
+    color: #9a3821;
+    text-shadow: 1px 1px 3px ;
+}
+
+.contenedor-imagen-nosotros{
+    display: flex;
+    margin: 5rem auto;
+    justify-content: center;
+    img{
+        border-radius: 2%;
+        filter: brightness(1.2);
+    }
+}
+
+.contenedor-texto-nosotros{
+    margin: 5rem 12rem;
+}
+
+ p{
+    text-align: left;
+    font-size: 1.2rem;
+    color: #9a3821;
+    font-weight: 500;
+}
+
+
+
+
+
+
+/* -------------       SUMATE      -----------  */
+.form-contenedor{
+    border: 1px solid #9a3821;
+    padding: 2rem;
+    margin: 5rem auto;
+    width: 50%;
+
+    button{
+        box-shadow: none;
+        border: none;
+    }
+}
 

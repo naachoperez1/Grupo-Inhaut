@@ -1,10 +1,6 @@
 ###### POR HACER ######
 
-- Agregar sombra al logo de grupo inhaut (canva o photoshop).
-
-- La seccion conoce nuestras propiedades tiene que ser mas moderna.
-
-- El slider infinito ocupa mucho mas que el ancho de la pantalla.
+- El slider infinito ocupa mucho mas que el ancho de la pantalla, es decir tiene overflow.
 
 - Hacer la pagina responsiva.
 
