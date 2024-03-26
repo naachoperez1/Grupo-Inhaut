@@ -587,6 +587,7 @@ body{
     margin: 5rem auto;
     justify-content: center;
     img{
+        width: 80%;
         border-radius: 2%;
         filter: brightness(1.2);
     }
