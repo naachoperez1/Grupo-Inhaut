@@ -364,7 +364,6 @@ body{
     .tarjeta{
         text-align: left;
         margin-top: 1.5rem;
-        background-color: rgb(255, 255, 255);
         padding: 5rem 2rem;
         border-radius: 3%;
         width: 30rem;
@@ -597,7 +596,7 @@ body{
     margin: 5rem 12rem;
 }
 
- p{
+.texto-nosotros{
     text-align: left;
     font-size: 1.2rem;
     color: #9a3821;
