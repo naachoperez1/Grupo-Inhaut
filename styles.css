@@ -11,7 +11,7 @@
     --blanco:rgb(255, 255, 255);
     --naranjaOscuro:#9a3821;
     --naranjaMasOscuro : #631c00;
-    --grisFondo: #dbdbcc;
+    --grisFondo: #e5dcec;
     --grisOscuro:#746c6c;
 }
 
@@ -310,7 +310,11 @@ body{
 
 .div-mitad{
     width: 50%;
-    padding: 5rem 2rem;
+    padding: 2.5rem 1rem;
+
+    img{
+        width: 15em;
+    }
 
 }
 
@@ -328,9 +332,6 @@ body{
         text-shadow: 1px 1px 3px var(--naranjaOscuro);
     }
 
-    img{
-        width: 20rem;
-    }
 
     .small{
         font-size: 1.5rem;
@@ -389,6 +390,8 @@ body{
         }
     }
 
+
+
     .tar-1{
         background-color: #eee;
         color: #ff9100;
@@ -418,6 +421,7 @@ body{
 }
 
 
+
 .septimo-div{
 
     display: flex;
@@ -435,9 +439,6 @@ body{
         text-shadow: 1px 1px 3px ;
     }
 
-    img{
-        width: 20rem;
-    }
 
     .small{
         font-size: 1.5rem;

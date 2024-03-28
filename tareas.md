@@ -6,12 +6,8 @@
 
 - Hacer que los elementos vayan apareciendo a medida que se scrollea, como en deinmobiliarios.
 
-- Combinacion nueva de colores.
-
 - Slider con dos niveles.
 
-- Imagenes patagonicas en el segundo slider.
 
-- Sos corredor inmobiliario? sumate.
 
 
