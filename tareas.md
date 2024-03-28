@@ -6,11 +6,7 @@
 
 - Hacer que los elementos vayan apareciendo a medida que se scrollea, como en deinmobiliarios.
 
-- Logo gris con naranja.
-
 - Combinacion nueva de colores.
-
-- Fuente de inmboiliarios.
 
 - Slider con dos niveles.
 
