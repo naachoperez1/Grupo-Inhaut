@@ -4,8 +4,6 @@
 
 - Hacer la pagina responsiva.
 
-- Hacer que los elementos vayan apareciendo a medida que se scrollea, como en deinmobiliarios.
-
 - Slider con dos niveles.
 
 
