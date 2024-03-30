@@ -1,4 +1,4 @@
-/* -------------       GLOBALES      -----------  */
+        /* -------------       GLOBALES      -----------  */
 
 
 *, *:before, *:after {
@@ -26,9 +26,8 @@ body{
 
 
 
-/* -------------       HEADER      -----------  */
+        /* -------------       HEADER      -----------  */
 .navbar{
-    /* background-color: var(--azul); */
     padding: 2rem 10rem;
 }
 
@@ -57,6 +56,7 @@ body{
     }
 }
 
+/* boton de sumate */
 .sumate{
     background-color: var(--naranja);
     padding: 0.7rem;
@@ -71,14 +71,14 @@ body{
 }
 
 
-/* -------------       MAIN      -----------  */
+            /* -------------       MAIN      -----------  */
+
 .main{
-    /* La altura es solo para probar el fondo, despues la saco */
-    /* min-height: 80rem;  */
     display: flex;
     flex-direction: column;
 }
 
+/* clase de utilidad para agregar animacion fadein */
 .fadein{   
     animation: fadein linear both;
     animation-timeline: view();
@@ -86,6 +86,28 @@ body{
 
 }
 
+.fadein-derecha{   
+    animation: fadein-derecha linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+
+}
+
+.fadein-izquierda{   
+    animation: fadein-izquierda linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+
+}
+
+.fadein-cohete{   
+    animation: fadein-cohete linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+
+}
+
+/* animacion fadein */
 @keyframes fadein{
     from{
       opacity: .3;
@@ -96,9 +118,45 @@ body{
       translate: 0 0;
   
     }
-  }
+}
 
+@keyframes fadein-derecha{
+    from{
+      opacity: .3;
+      translate: 500px 0;
+    }
+    to{
+      opacity: 1;
+      translate: 0 0;
+  
+    }
+}
 
+@keyframes fadein-izquierda{
+    from{
+      opacity: .3;
+      translate: -500px 0;
+    }
+    to{
+      opacity: 1;
+      translate: 0 0;
+  
+    }
+}
+
+@keyframes fadein-cohete{
+    from{
+      opacity: .3;
+      translate: -300px 300px;
+    }
+    to{
+      opacity: 1;
+      translate: 0 0;
+  
+    }
+}
+
+/* div presentacion */
 .primer-div{
     display: flex;
     flex-direction: column;
@@ -135,8 +193,7 @@ body{
     }
 }
 
-/* Animacion slider */
-
+/* slider horizontal automatico */
 .scroller {
     margin: 0 auto;
     margin-top: 3rem;
@@ -147,7 +204,7 @@ body{
   width: 20rem;
   height: 23rem;
   border-radius: 3%;
-  /* filter: brightness(0.7); */
+
 }
 
 .scroller__inner {
@@ -195,88 +252,19 @@ body{
 
 
 
-
+/* contenedor slider manual, el css del slider esta abajo de todo porque sino no funciona */
 .segundo-div{
-    /* padding: 5rem 10rem 0 10rem; */
 
     .content{
         color: var(--naranja);
         text-shadow: 1px 1px 3px ;
     }
-
-    /* .texto-segundo-div{ 
-        margin-top: 2rem;
-        text-align: center;
-        font-size: 2rem;
-        color: #9a3821;
-        font-weight: 400;
-    } */
     
 
 }
 
-/* .tercer-div{
-    margin-top: -40px;
-    background-image: url(imagenes/bg-canva-2.jpg);
-    padding: 5rem 10rem;
-    text-align: center;
-    transition: opacity 1s ease;
-    box-shadow:1px 1px 3px #807878;
-    p{
-        margin-top: 5rem;
-        font-family: "Maven Pro";
-        font-weight: 600;
-        color: white;
-        font-size: 4rem;
-    }
-    .iconos-nosotros{
-        margin-top: 7rem;
-        display: flex;
-        gap: 2rem;
-
-        p{
-            font-family: "Maven Pro";
-            color: white;
-            font-weight: 300;
-            font-size: 1rem;
-            margin-top: 1rem;
-            text-shadow: none;
-        }
-    }
-    
-    .icono {
-        text-align: center;
-        img {
-            height: 8rem;
-        }
-        h3 {
-            font-family: "Maven Pro";
-            font-size: 2rem;
-            color: #ffffff;
-            margin-top: 2rem ;
-        }
-
-        .icono-img{
-            color: white;
-        }
-    }
-
-    .conoce-mas{
-        margin-top: 5rem;
-        color: white;
-
-        h3{
-            font-size: 3rem;
-        }
-
-        .flecha{
-            width: 7rem;
-        }
-    }
-
-} */
-
-.cuarto-div{
+/* div texto y cohete */
+.tercer-div{
     display: flex;
     flex-direction: column;
     
@@ -292,7 +280,7 @@ body{
         }
     }
 
-    .texto-cuarto-div{
+    .texto-tercer-div{
         text-shadow: 1px 1px 3px ;
         margin-bottom: 1rem;
         text-align: center;
@@ -301,26 +289,29 @@ body{
         color:var(--naranjaOscuro);
     }
 
-    .carousel{
-        margin-bottom: 5rem;
-        background-position: center bottom;
-    }
+}
+
+/* carrusel con bootstrap patagonia */
+.carousel{
+    margin-bottom: 5rem;
+    background-position: center bottom;
 
     h5{
         font-size: 2rem;
     }
-
+    
     .d-item{
         height: 95vh;
         
     }
-
+    
     .d-img{
         filter: brightness(0.5);
     }
 }
 
-.contenedor-quinto-septimo{
+
+.contenedor-quinto-sexto{
     display: flex;
     gap: 3rem;
     justify-content: center;
@@ -336,6 +327,7 @@ body{
     }
 
 }
+
 
 .quinto-div{
 
@@ -371,11 +363,49 @@ body{
     }
 }
 
-
 .sexto-div{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--naranjaMasOscuro);
+    color: white;
+    border-radius: 2%;
+    box-shadow: 5px 5px 15px  black;
+
+    .texto-sexto-div{
+        font-size: 3rem;
+        font-weight: 600;
+        text-align: center;
+        text-shadow: 1px 1px 3px ;
+    }
+
+
+    .small{
+        font-size: 1.5rem;
+        text-shadow: none;
+    }
+
+    button{
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        background-color: var(--grisFondo);
+        color: var(--naranjaMasOscuro);
+        box-shadow:1px 1px 3px #000000;
+        &:hover{
+            background-color: var(--naranjaOscuro);
+            color: white;
+        }
+    }
+}
+
+
+.septimo-div{
     padding: 5rem;
     background-color: var(--naranjaMasOscuro);
-    .texto-sexto-div{
+
+    .texto-septimo-div{
         margin: 5rem 0 3rem 0;
         color: white;
         font-size: 4rem;
@@ -431,52 +461,10 @@ body{
         color: #9a3821;
     }
 
-
-    .icono3d{
-        width: 3rem;
-    }
-
     
 }
 
 
-
-.septimo-div{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--naranjaMasOscuro);
-    color: white;
-    border-radius: 2%;
-    box-shadow: 5px 5px 15px  black;
-
-    .texto-septimo-div{
-        font-size: 3rem;
-        font-weight: 600;
-        text-align: center;
-        text-shadow: 1px 1px 3px ;
-    }
-
-
-    .small{
-        font-size: 1.5rem;
-        text-shadow: none;
-    }
-
-    button{
-        font-weight: 500;
-        font-size: 1.5rem;
-        margin-top: 1rem;
-        background-color: var(--grisFondo);
-        color: var(--naranjaMasOscuro);
-        box-shadow:1px 1px 3px #000000;
-        &:hover{
-            background-color: var(--naranjaOscuro);
-            color: white;
-        }
-    }
-}
 
 
 
@@ -498,7 +486,7 @@ body{
 
 
 
-/* css slider */
+/* slider manual fotos de casas (esta aca porque sino no funciona) */
 .slider{
     height: 100vh;
     position: relative;
