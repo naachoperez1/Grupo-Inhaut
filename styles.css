@@ -11,8 +11,8 @@
     --blanco:rgb(255, 255, 255);
     --naranjaOscuro:#9a3821;
     --naranjaMasOscuro : #631c00;
-    --grisFondo: #e5dcec;
-    --grisOscuro:#746c6c;
+    --grisFondo: #c6c6c6;
+    --grisOscuro:#676767;
 }
 
 body{
@@ -47,12 +47,12 @@ body{
 
 .nav-item{
     margin: 0 2rem;
-    color:#9a3821;
+    color:var(--naranja);
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 500;
     &:hover{
-        color: var(--naranja);
+        color: var(--naranjaOscuro);
     }
 }
 
@@ -63,10 +63,11 @@ body{
     color: white;
     border-radius: 10%;
     font-weight: 500;
-    box-shadow:1px 1px 3px var(--naranjaOscuro);
+    box-shadow:1px 1px 3px var(--naranja);
     &:hover{
-        background-color: #9a3821;
+        background-color: var(--naranjaOscuro);
         color: var(--blanco);
+        box-shadow:1px 1px 3px var(--naranjaOscuro);
     }
 }
 
@@ -78,15 +79,18 @@ body{
     flex-direction: column;
 }
 
+
+
 /* clase de utilidad para agregar animacion fadein */
 .fadein{   
     animation: fadein linear both;
     animation-timeline: view();
-    animation-range: entry 10% cover 40%;
+    animation-range: entry 20% cover 40%;
 
 }
 
 .fadein-derecha{   
+    
     animation: fadein-derecha linear both;
     animation-timeline: view();
     animation-range: entry 10% cover 40%;
@@ -107,6 +111,8 @@ body{
 
 }
 
+
+
 /* animacion fadein */
 @keyframes fadein{
     from{
@@ -123,7 +129,7 @@ body{
 @keyframes fadein-derecha{
     from{
       opacity: .3;
-      translate: 500px 0;
+      translate: -1000px 0;
     }
     to{
       opacity: 1;
@@ -156,20 +162,22 @@ body{
     }
 }
 
+
+
 /* div presentacion */
 .primer-div{
     display: flex;
     flex-direction: column;
     align-items: center;
     p{
-        font-size: 5rem;
-        color: #9a3821;
+        font-size: 4.5rem;
+        color: var(--grisOscuro);
         text-align: center;
-        font-weight: 500;
-        text-shadow: 1px 1px 3px var(--naranjaOscuro);
+        font-weight: 400;
+        text-shadow: 1px 1px 3px ;
         margin: 0;
         span{
-            font-weight: 900;
+            font-weight: 800;
             color: var(--naranja);
         }
         
@@ -182,9 +190,10 @@ body{
         font-weight: 500;
         background-color: var(--naranja);
         border: none;
-        box-shadow:1px 1px 3px var(--naranjaOscuro);
+        box-shadow:1px 1px 3px var(--naranja);
         &:hover{
-            background-color: #9a3821;
+            background-color: var(--naranjaOscuro);
+            box-shadow:1px 1px 3px var(--naranjaOscuro);
         }
     }
 
@@ -194,7 +203,77 @@ body{
 }
 
 /* slider horizontal automatico */
-.scroller {
+
+.slider-horizontal {
+    width: 100vw;
+    height: auto;
+    margin: 2rem auto 0;
+    /* padding-bottom: 1rem; */
+    overflow: hidden;
+}
+
+.slider-horizontal .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 24);
+
+}
+
+.slider-horizontal .slide {
+    margin: 0 .5rem;
+}
+
+.slider-horizontal .slide img {
+    margin: .3rem 0;
+    border-radius: 3%;
+}
+
+/* .slide-solo{
+    padding: 2rem 0;
+} */
+
+.slide-solo img{
+    height: 30rem;
+    width: 20rem;
+}
+
+.slide-impar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-par img{
+    height: 14.7rem;
+    width: 12rem;
+}
+
+.slide-impar img{
+    height: 19rem;
+    width: 15rem;
+}
+
+.slide-impar .pulgar{
+    height: 10.4rem;
+    width: 15rem;
+    background-color: var(--naranja);
+}
+
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-600px * 3));
+        transform: translateX(calc(-600px * 3));
+    }
+}
+
+
+/* .scroller {
     margin: 0 auto;
     margin-top: 3rem;
     
@@ -247,7 +326,7 @@ body{
     transform: translate(calc(-50% - 0.5rem));
     
   }
-}
+} */
 
 
 
@@ -256,7 +335,7 @@ body{
 .segundo-div{
 
     .content{
-        color: var(--naranja);
+        color: #313131;
         text-shadow: 1px 1px 3px ;
     }
     
@@ -286,7 +365,7 @@ body{
         text-align: center;
         font-size: 4rem;
         font-weight: 600;
-        color:var(--naranjaOscuro);
+        color:var(--naranja);
     }
 
 }
@@ -340,7 +419,7 @@ body{
         font-size: 3rem;
         font-weight: 600;
         text-align: center;
-        text-shadow: 1px 1px 3px var(--naranjaOscuro);
+        text-shadow: 1px 1px 3px ;
     }
 
 
@@ -353,11 +432,12 @@ body{
         font-weight: 500;
         font-size: 1.5rem;
         margin-top: 1rem;
-        background-color: var(--naranja);
+        background-color: var(--naranjaOscuro);
         color: white;
-        box-shadow:1px 1px 3px #000000;
+        box-shadow:1px 1px 3px var(--naranjaOscuro);
         &:hover{
-            background-color: #9a3821;
+            background-color: var(--naranjaMasOscuro);
+            box-shadow:1px 1px 3px var(--naranjaMasOscuro);
             color: white;
         }
     }
@@ -368,10 +448,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--naranjaMasOscuro);
+    background-color: var(--naranja);
     color: white;
     border-radius: 2%;
-    box-shadow: 5px 5px 15px  black;
+    box-shadow: 5px 5px 15px var(--naranjaMasOscuro);
 
     .texto-sexto-div{
         font-size: 3rem;
@@ -390,12 +470,12 @@ body{
         font-weight: 500;
         font-size: 1.5rem;
         margin-top: 1rem;
-        background-color: var(--grisFondo);
-        color: var(--naranjaMasOscuro);
-        box-shadow:1px 1px 3px #000000;
+        background-color: white;
+        color: var(--naranjaOscuro);
+        box-shadow:1px 1px 3px var(--grisOscuro);
         &:hover{
-            background-color: var(--naranjaOscuro);
-            color: white;
+            background-color: var(--grisFondo);
+            color: var(--naranjaMasOscuro);
         }
     }
 }
@@ -403,7 +483,7 @@ body{
 
 .septimo-div{
     padding: 5rem;
-    background-color: var(--naranjaMasOscuro);
+    background-color: var(--naranja);
 
     .texto-septimo-div{
         margin: 5rem 0 3rem 0;
@@ -480,8 +560,8 @@ body{
 }
 
 .footer-index{
-    background-color: var(--naranjaMasOscuro);
-    color: var(--grisFondo);
+    background-color: var(--naranja);
+    color: var(--blanco);
 }
 
 
