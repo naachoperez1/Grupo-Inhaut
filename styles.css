@@ -36,6 +36,28 @@ body{
     width: 100%;
     justify-content: space-between ;
     align-items: center;
+    @media (max-width: 1120px) {
+        flex-direction: column;
+        gap: 2rem;
+        .logo{
+            width: 10rem;
+        }
+    }
+}
+
+.navegacion{
+    display: flex;
+    align-items: center;
+    @media (max-width:620px){
+        flex-direction: column;
+        gap: 1rem;
+        .nav-item{
+            font-size: 1rem;
+        }
+        .sumate{
+            display: none;
+        }
+    }
 }
 
 .logo{
@@ -180,6 +202,10 @@ body{
             font-weight: 800;
             color: var(--naranja);
         }
+
+        @media (max-width:870px) {
+            font-size: 2.5rem;
+        }
         
     }
     button{
@@ -195,6 +221,12 @@ body{
             background-color: var(--naranjaOscuro);
             box-shadow:1px 1px 3px var(--naranjaOscuro);
         }
+        @media (max-width:870px) {
+            font-size: 1rem;
+        }
+        /* @media (max-width:620px) {
+            display:none;
+        } */
     }
 
     .texto{
@@ -366,6 +398,9 @@ body{
         font-size: 4rem;
         font-weight: 600;
         color:var(--naranja);
+        @media (max-width:680px) {
+            font-size: 2.5rem;
+        }
     }
 
 }
@@ -374,9 +409,13 @@ body{
 .carousel{
     margin-bottom: 5rem;
     background-position: center bottom;
+    @media (max-width:680px) {
+        display: none;
+    }
 
     h5{
-        font-size: 2rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
     }
     
     .d-item{
@@ -395,9 +434,18 @@ body{
     gap: 3rem;
     justify-content: center;
     margin: 0 5rem 5rem;
+    @media (max-width:680px) {
+        flex-direction: column;
+        margin: 0;
+    }
 }
 
 .div-mitad{
+    @media (max-width:680px) {
+        width: 100%;
+        margin-top: -10rem;
+
+    }
     width: 50%;
     padding: 2.5rem 1rem;
 
@@ -413,6 +461,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width:680px) {
+        scale: 0.7;
+    }
 
     .texto-quinto-div{
         color: var(--naranjaOscuro);
@@ -452,6 +503,11 @@ body{
     color: white;
     border-radius: 2%;
     box-shadow: 5px 5px 15px var(--naranjaMasOscuro);
+    @media (max-width:680px) {
+        scale: 0.7;
+        margin-top: -15rem;
+    }
+
 
     .texto-sexto-div{
         font-size: 3rem;
@@ -484,6 +540,9 @@ body{
 .septimo-div{
     padding: 5rem ;
     background-color: var(--naranja);
+    @media (max-width:1000px) {
+        padding: 2rem;
+    }
 
     .texto-septimo-div{
         margin: 5rem 0 3rem 0;
@@ -492,12 +551,20 @@ body{
         font-weight: 600;
         text-align: center;
         text-shadow: 1px 1px 3px;
+        @media (max-width:1000px) {
+            font-size: 2rem;
+        }
     }
     
     .grid-tarjetas{
         display: flex;
         justify-content: center;
         gap: 1.5rem;
+        @media (max-width:1000px) {
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
     }
 
     .tarjeta{
@@ -508,14 +575,23 @@ body{
         width: 30rem;
         height: 20rem;
         box-shadow: 2px 2px 5px #9a3821;
+        @media (max-width:1000px) {
+            width: 100%;
+        }
 
         h3{
             font-size: 2.5rem;
             font-weight: 700;
+            @media (max-width:1000px) {
+                font-size: 2rem;
+            }
         }
         p{
             font-size: 1.2rem;
             font-weight: 400;
+            @media (max-width:1000px) {
+                font-size: 1.2rem;
+            }
         }
     }
 
@@ -539,6 +615,9 @@ body{
     .tar-4{
         background-color: #eee;
         color: #9a3821;
+        @media (max-width:1000px) {
+            margin-bottom: 5rem;
+        }
     }
 
     
@@ -571,9 +650,13 @@ body{
     height: 100vh;
     position: relative;
     margin-top: 2rem;
+    @media (max-width:680px) {
+        height: 70vh;
+    }
 }
 
 .content{
+
     
     h3  {
         color: white;
@@ -581,6 +664,10 @@ body{
         font-size: 5rem;
         font-weight: 500;
         margin: 2rem 0;
+
+        @media (max-width:680px) {
+            font-size: 3rem;
+        }
     }
 }
 .slider .list .item{
@@ -687,6 +774,16 @@ body{
     filter: brightness(.5);
     transition: .5s;
     flex-shrink: 0;
+    @media (max-width : 680px) {
+        width: 70px;
+        height: 130px;
+        margin-top: 5rem;
+    }
+    @media (max-width : 420px) {
+        width: 50px;
+        height: 100px;
+        margin-top: 8rem;
+    }
 }
 .thumbnail .item img{
     width: 100%;
