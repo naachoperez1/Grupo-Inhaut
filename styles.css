@@ -226,7 +226,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    p{
+    .primer-div-texto{
         font-size: 4.5rem;
         color: var(--grisOscuro);
         text-align: center;
@@ -264,7 +264,7 @@ body{
         } */
     }
 
-    .texto{
+    .texto-contenedor{
         line-height: normal;
     }
 }
