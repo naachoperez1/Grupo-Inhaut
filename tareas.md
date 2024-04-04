@@ -1,6 +1,7 @@
 ###### POR HACER ######
 
-- Hacer la pagina responsiva.
+- Fijarse compatibilidad con otros navegadores.
+
 
 
 
