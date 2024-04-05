@@ -84,3 +84,5 @@ thumbnails.forEach((thumbnail, index) => {
     })
 })
 
+
+
